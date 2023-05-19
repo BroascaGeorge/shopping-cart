@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-box">
-        <span className="my-shop">My shopping</span>
+        <span className="my-shop">My shop</span>
         <div className="cart">
           <span>
             <i className="fas fa-cart-plus"></i>
