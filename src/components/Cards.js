@@ -1,3 +1,5 @@
+import "../styles/cards.css";
+
 const Cards = ({ item }) => {
   const { title, author, price, img } = item;
 
