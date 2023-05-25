@@ -8,10 +8,14 @@ function App() {
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
 
+  const handleClick = (item) => {
+    console.log(item);
+  };
+
   return (
     <>
       <Navbar size={cart.length} />
-      <Amazon />
+      <Amazon handleClick={handleClick} />
       <Cart />
     </>
   );

@@ -1,6 +1,6 @@
 import "../styles/navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ size }) => {
   return (
     <nav>
       <div className="nav-box">
