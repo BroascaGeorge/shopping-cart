@@ -29,9 +29,13 @@ function App() {
 
   return (
     <>
-      <Navbar size={cart.length} />
-      <Amazon handleClick={handleClick} />
-      <Cart />
+      <Navbar size={cart.length} setShow={setShow} />
+      {show ? (
+        <Amazon handleClick={handleClick} />
+      ) : (
+        <Cart cart={cart} setCart={setCart} />
+      )}
+
       {warning && (
         <div className="warning">Item is already added to your cart.</div>
       )}
