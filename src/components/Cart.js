@@ -9,7 +9,7 @@ const Cart = ({ cart, setCart }) => {
       {cart?.map((item) => {
         <div className="cart-box" key={item.id}>
           <div className="cart-img">
-            <img src={cart.img}></img>
+            <img src={cart.img} alt="cart.img"></img>
             <p>{item.title}</p>
           </div>
           <div>
@@ -23,7 +23,7 @@ const Cart = ({ cart, setCart }) => {
         </div>;
       })}
       <div>
-        <span>Total price of your cart</span>
+        <span>Total price of your cart is - </span>
         <span>${price}</span>
       </div>
     </article>

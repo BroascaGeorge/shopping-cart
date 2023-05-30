@@ -4,8 +4,10 @@ const Navbar = ({ size, setShow }) => {
   return (
     <nav>
       <div className="nav-box">
-        <span className="my-shop">My shop</span>
-        <div className="cart">
+        <span className="my-shop" onClick={() => setShow(true)}>
+          My shop
+        </span>
+        <div className="cart" onClick={() => setShow(false)}>
           <span>
             <i className="fas fa-cart-plus"></i>
           </span>
