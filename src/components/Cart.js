@@ -1,8 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/cart.css";
 
 const Cart = ({ cart, setCart }) => {
   const [price, setPrice] = useState(0);
+
+  const handlePrice = () => {
+    let ans = 0;
+    cart.map((item) => (ans += item.amount * item.price));
+    setPrice(ans);
+  };
+
+  useEffect(() => {
+    handlePrice();
+  });
 
   return (
     <article>
@@ -14,6 +24,7 @@ const Cart = ({ cart, setCart }) => {
           </div>
           <div>
             <button>+</button>
+            <button>{item.amount}</button>
             <button>-</button>
           </div>
           <div>
@@ -22,7 +33,7 @@ const Cart = ({ cart, setCart }) => {
           </div>
         </div>;
       })}
-      <div>
+      <div className="total">
         <span>Total price of your cart is - </span>
         <span>${price}</span>
       </div>

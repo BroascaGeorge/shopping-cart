@@ -76,4 +76,5 @@ article {
 .total span:nth-child(2) {
   font-size: 2rem;
   color: green;
+  font-weight: bold;
 }
