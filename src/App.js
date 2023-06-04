@@ -27,13 +27,17 @@ function App() {
     setCart([...cart, item]);
   };
 
+  const handleChange = (item) => {
+    console.log(item);
+  };
+
   return (
     <>
       <Navbar size={cart.length} setShow={setShow} />
       {show ? (
         <Amazon handleClick={handleClick} />
       ) : (
-        <Cart cart={cart} setCart={setCart} />
+        <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
       )}
 
       {warning && (
