@@ -5,7 +5,7 @@ const Cards = ({ item, handleClick }) => {
   const { title, author, price, img } = item;
   return (
     <div className="cards">
-      <div className="image_box">
+      <div className="image-box">
         <img src={img} alt="Image" />
       </div>
       <div className="details">
