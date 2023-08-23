@@ -13,7 +13,6 @@ section {
 }
 .cards:hover {
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 .image-box img {
   width: 150px;
@@ -37,4 +36,8 @@ section {
   background-color: skyblue;
   outline: none;
   border-radius: 2px;
+}
+
+.details button:hover {
+  cursor: pointer;
 }
