@@ -18,6 +18,10 @@ section {
   width: 150px;
   height: 200px;
 }
+
+.image-box img {
+  cursor: pointer;
+}
 .details p:nth-child(1) {
   font-weight: bold;
 }
